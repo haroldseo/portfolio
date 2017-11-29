@@ -11,7 +11,10 @@ p {
   line-height: 1.75; }
 
 a {
-  color: #fed136; }
+  color: #fed136; 
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
   a:hover {
     color: #fec503; }
 
@@ -34,8 +37,9 @@ section {
     margin-top: 0;
     margin-bottom: 15px; }
   section h3.section-subheading {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
+    color: #fed136;
     font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
@@ -43,7 +47,7 @@ section {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0; } }
+    padding: 110px 0 150px; } }
 
 .btn {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -92,7 +96,7 @@ body {
     background-color: #fed136;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   #mainNav .navbar-brand {
-    color: white;
+    color: #fed136;
     /* font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; } */
     font-family: 'Great Vibes', cursive; 
     font-weight: bold; }
@@ -110,14 +114,15 @@ body {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent; }
+    background-color: #212529; }
     #mainNav .navbar-brand {
+      color: #fed136;
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
@@ -129,16 +134,16 @@ body {
       padding-bottom: 0;
       background-color: #212529; }
       #mainNav.navbar-shrink .navbar-brand {
-        font-size: 1.25em;
+        font-size: 1.25em; 
         padding: 12px 0; } }
 
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/la-header.jpg");
+  background-image: url("../img/los-angeles3.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: 50% 23%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -147,38 +152,79 @@ header.masthead {
     padding-top: 150px;
     padding-bottom: 100px; }
     header.masthead .intro-text .intro-lead-in {
-      font-size: 22px;
-      font-style: italic;
+      font-size: 30px;
+      color: #fed136;
+      text-shadow: 0 0 5px rgb(32, 32, 32);
+      /* font-style: italic; */
       line-height: 22px;
       margin-bottom: 25px;
-      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      /* font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+      font-family: 'Great Vibes', cursive; }
     header.masthead .intro-text .intro-heading {
-      font-size: 50px;
+      color: #fed136;
+      font-size: 80px;
       font-weight: 700;
+      text-shadow: 0 0 5px rgb(32, 32, 32);
       line-height: 50px;
+      margin-top: 5px;
       margin-bottom: 25px;
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      /* font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; } */
+      font-family: 'Great Vibes', cursive; }
 
 @media (min-width: 768px) {
-  header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px; }
-    header.masthead .intro-text .intro-lead-in {
-      font-size: 40px;
-      font-style: italic;
-      line-height: 40px;
-      margin-bottom: 25px;
-      font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-    header.masthead .intro-text .intro-heading {
-      font-size: 75px;
-      font-weight: 700;
-      line-height: 75px;
-      margin-bottom: 50px;
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; } }
+  header.masthead {
+    background-position: 50% 50% }
+    header.masthead .intro-text {
+      padding-top: 340px;
+      padding-bottom: 265px; }
+      header.masthead .intro-text .intro-lead-in {
+        font-size: 40px;
+        color: #fed136;
+        text-shadow: 0 0 5px rgb(32, 32, 32);
+        /* font-style: italic; */
+        line-height: 40px;
+        margin-bottom: 25px;
+        /* font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+        font-family: 'Great Vibes', cursive; }
+      header.masthead .intro-text .intro-heading {
+        color: #fed136;
+        font-size: 130px;
+        font-weight: 700;
+        text-shadow: 0 0 5px rgb(32, 32, 32);
+        line-height: 75px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        /* font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; } } */
+        font-family: 'Great Vibes', cursive; } }
 
 .service-heading {
   margin: 15px 0;
   text-transform: none; }
+
+.container.about {
+  padding-right: 30px;
+  padding-left: 30px; 
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .container.about {
+    /* padding-right: 150px;
+    padding-left: 150px;  */
+    text-align: center; } }
+
+#profileImg {
+  width: 340px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+div.col-lg-6.about {
+  margin-top: 30px;
+}
+
+.skills.list {
+  list-style: none;
+  padding-left: 0; }
 
 #portfolio .portfolio-item {
   right: 0;
@@ -447,7 +493,8 @@ section#contact {
   background-repeat: no-repeat;
   background-position: center; }
   section#contact .section-heading {
-    color: #fff; }
+    /* color: #fff;  */
+    color: #fed136}
   section#contact .form-group {
     margin-bottom: 25px; }
     section#contact .form-group input,
