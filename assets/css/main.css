@@ -1504,12 +1504,23 @@
 				padding: 2em 2em 0.1em 2em;
 			}
 
+			.categories {
+				letter-spacing: 3px;
+			}
+
 		}
 
 		@media screen and (max-width: 480px) {
 
 			#main {
 				padding: 2em 1em 0.1em 1em;
+			}
+
+			.categories {
+				letter-spacing: 0;
+				font-size: 75%;
+				padding-right: 1px;
+				padding-left: 1px;
 			}
 
 		}
