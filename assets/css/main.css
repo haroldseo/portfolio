@@ -1457,7 +1457,7 @@
 /* Main */
 
 	#main {
-		padding: 4em 0em 0em 0em;
+		padding: 3em 0em 0em 0em;
 		background-color: #ffffff;
 		border-radius: 4px;
 	}
@@ -1466,6 +1466,7 @@
 			width: 100%;
 			margin-right: auto;
 			margin-left: auto;
+			margin-top: 2em;
 		}
 
 		.row {
@@ -1478,11 +1479,7 @@
 			position: relative;
 			width: 25%;
 			list-style: none;
-		}
-
-		.techs.lines {
-			border-right: solid 1px #666666;
-			margin-bottom: 40px;
+			margin-bottom: 2em;
 		}
 
 		.techs ul {
@@ -1492,6 +1489,18 @@
 		.techs li {
 			list-style: none;
 			padding: 0;
+		}
+
+		.categories {
+			display: flex;
+			height: 70px;
+			margin-bottom: 0.8em;
+		}
+
+		.categories h3 {
+			margin: auto;
+			text-align: center;
+			line-height: 25px;
 		}
 
 		#main > header:first-child {
@@ -1504,7 +1513,7 @@
 				padding: 2em 2em 0.1em 2em;
 			}
 
-			.categories {
+			.categories h3 {
 				letter-spacing: 3px;
 			}
 
@@ -1513,14 +1522,19 @@
 		@media screen and (max-width: 480px) {
 
 			#main {
-				padding: 2em 1em 0.1em 1em;
+				padding: 2em 0em 0.1em 0em;
 			}
 
-			.categories {
+			.categories h3 {
 				letter-spacing: 0;
-				font-size: 75%;
+				font-size: 80%;
 				padding-right: 1px;
 				padding-left: 1px;
+				line-height: 15px;
+			}
+
+			.container {
+				margin-top: 1.5em;
 			}
 
 		}
